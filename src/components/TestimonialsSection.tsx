@@ -9,7 +9,7 @@ const testimonials = [
     position: 'CEO, TechFusion',
     avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&h=100&fit=crop',
     rating: 5,
-    text: 'Noobcores.io transformed our outdated platform into a modern, high-performing application. Their team's expertise in React and Laravel is unmatched!'
+    text: "Noobcores.io transformed our outdated platform into a modern, high-performing application. Their team's expertise in React and Laravel is unmatched!"
   },
   {
     id: 2,
