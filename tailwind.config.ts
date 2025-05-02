@@ -113,9 +113,9 @@ export default {
 					}
 				},
 				'star-twinkle': {
-					'0%': { opacity: '0.4' },
-					'50%': { opacity: '1' },
-					'100%': { opacity: '0.4' }
+					'0%': { opacity: '0.4', transform: 'scale(0.9)' },
+					'50%': { opacity: '1', transform: 'scale(1.1)' },
+					'100%': { opacity: '0.4', transform: 'scale(0.9)' }
 				}
 			},
 			animation: {
