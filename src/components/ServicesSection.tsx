@@ -11,40 +11,28 @@ import {
 
 const services = [
   {
-    title: 'Web Development',
+    title: 'Web & App Development',
     icon: Layout,
-    description: 'Modern, responsive websites built with cutting-edge technologies that look great on any device.',
+    description: 'Full-stack applications using MERN, TALL stack, and React Native for cross-platform mobile apps.',
     color: 'cosmic-purple'
   },
   {
-    title: 'Laravel',
-    icon: Code,
-    description: 'Robust backend applications and APIs using Laravel, the PHP framework for web artisans.',
-    color: 'cosmic-pink'
-  },
-  {
-    title: 'React',
-    icon: Terminal,
-    description: 'Interactive, state-driven front-end applications with React and its powerful ecosystem.',
+    title: 'APIs & Real-time Systems',
+    icon: Database,
+    description: 'High-performance APIs with FastAPI, WebSocket connections, and Redis for real-time data processing.',
     color: 'cosmic-blue'
   },
   {
-    title: 'AI Solutions',
+    title: 'AI & Automation',
     icon: Cpu,
-    description: 'Integrate AI capabilities into your applications for intelligent automation and insights.',
+    description: 'Intelligent solutions using LangChain, LangGraph, and QA automation for seamless workflows.',
     color: 'cosmic-cyan'
   },
   {
-    title: 'DevOps',
-    icon: Database,
-    description: 'Streamline your development pipeline with CI/CD, containerization, and cloud solutions.',
-    color: 'cosmic-purple'
-  },
-  {
-    title: 'Digital Marketing',
-    icon: BarChart,
-    description: 'Data-driven digital marketing strategies that deliver measurable results.',
-    color: 'cosmic-blue'
+    title: 'DevOps & Deployment',
+    icon: Terminal,
+    description: 'AWS cloud infrastructure, Vercel hosting, Docker containerization, and complete CI/CD pipelines.',
+    color: 'cosmic-pink'
   }
 ];
 
@@ -65,11 +53,11 @@ const ServicesSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="cosmic-card p-6 group transition-all duration-300 hover:translate-y-[-5px]"
+              className="cosmic-card p-6 group transition-all duration-300 hover:translate-y-[-5px] rounded-xl shadow-lg"
             >
               <div className={`inline-flex p-3 rounded-lg bg-${service.color}/10 mb-4 group-hover:bg-${service.color}/20 transition-colors duration-300`}>
                 <service.icon 

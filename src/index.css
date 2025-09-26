@@ -66,7 +66,7 @@
   }
 
   .cosmic-card {
-    @apply bg-cosmic-darker/80 backdrop-blur-sm rounded-lg cosmic-border;
+    @apply bg-cosmic-darker/80 backdrop-blur-sm rounded-xl cosmic-border shadow-lg;
   }
 
   .star-bg {

@@ -6,39 +6,31 @@ import { ExternalLink } from 'lucide-react';
 const projects = [
   {
     id: 1,
-    title: 'Stellar Dashboard',
-    category: 'Web App',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=500&fit=crop',
-    description: 'Admin dashboard with real-time data visualization and user management.',
-    tags: ['React', 'Node.js', 'Chart.js']
+    title: 'E-Commerce Analytics Platform',
+    category: 'Full-Stack Development',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=500&fit=crop',
+    description: 'Real-time analytics dashboard with AI-powered insights for e-commerce businesses. Built with MERN stack and Redis.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Redis', 'FastAPI']
   },
   {
     id: 2,
-    title: 'Quantum E-commerce',
-    category: 'Web Development',
-    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=500&fit=crop',
-    description: 'Modern e-commerce platform with seamless checkout and inventory management.',
-    tags: ['Laravel', 'Vue.js', 'Stripe']
+    title: 'AI-Powered QA Automation Suite',
+    category: 'AI & Automation',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=500&fit=crop',
+    description: 'Intelligent testing platform using LangChain for automated test generation and execution across web and mobile apps.',
+    tags: ['LangChain', 'Python', 'React', 'WebSockets', 'Docker']
   },
   {
     id: 3,
-    title: 'Nebula AI Assistant',
-    category: 'Artificial Intelligence',
-    image: 'https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=800&h=500&fit=crop',
-    description: 'AI-powered virtual assistant that helps users schedule meetings and tasks.',
-    tags: ['Python', 'TensorFlow', 'NLP']
-  },
-  {
-    id: 4,
-    title: 'Orbit Analytics',
-    category: 'Data Science',
-    image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=500&fit=crop',
-    description: 'Advanced analytics platform that provides actionable business insights.',
-    tags: ['React', 'D3.js', 'Python']
+    title: 'Real-time Collaboration Tool',
+    category: 'Real-time Systems',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop',
+    description: 'Live collaboration platform with WebSocket connections, deployed on AWS with complete CI/CD pipeline.',
+    tags: ['React Native', 'FastAPI', 'WebSockets', 'AWS', 'Docker']
   }
 ];
 
-const categories = ['All', 'Web Development', 'Web App', 'Artificial Intelligence', 'Data Science'];
+const categories = ['All', 'Full-Stack Development', 'AI & Automation', 'Real-time Systems'];
 
 const ProjectsSection = () => {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -81,11 +73,11 @@ const ProjectsSection = () => {
         </div>
         
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
             <div 
               key={project.id} 
-              className="cosmic-card group relative overflow-hidden transition-all duration-300"
+              className="cosmic-card group relative overflow-hidden transition-all duration-300 hover:translate-y-[-5px] rounded-xl shadow-lg"
             >
               <div className="aspect-video overflow-hidden">
                 <img 

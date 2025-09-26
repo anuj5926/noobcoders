@@ -17,22 +17,21 @@ const HeroSection = () => {
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-2">
               <div className="h-1 w-6 bg-cosmic-purple"></div>
-              <span className="text-cosmic-pink font-medium">Futuristic Tech Solutions</span>
+              <span className="text-cosmic-pink font-medium">Professional Development Team</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="text-white">Pioneering</span> <span className="text-gradient">Digital Frontiers</span>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              We build <span className="text-gradient">scalable web, mobile & AI solutions</span> for startups and businesses.
             </h1>
-            <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-xl">
-              We craft cutting-edge digital experiences that transform businesses into 
-              technological powerhouses ready for the future.
+            <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl">
+              A team of 4 developers delivering full-stack apps, automation, and real-time systems.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="bg-cosmic-purple hover:bg-cosmic-blue transition-colors">
-                Explore Our Services
+                Hire Us on Upwork
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button size="lg" variant="outline" className="border-cosmic-purple text-white hover:bg-cosmic-purple/10">
-                View Our Work
+                Contact Us
               </Button>
             </div>
             <div className="mt-12 flex items-center gap-6">

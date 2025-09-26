@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Phone, ExternalLink } from 'lucide-react';
+import { Mail, Phone, ExternalLink, Github, Linkedin } from 'lucide-react';
 
 const ContactSection = () => {
   const handleSubmit = (event: React.FormEvent) => {
@@ -59,17 +59,6 @@ const ContactSection = () => {
                   </div>
                 </div>
                 
-                <div className="mb-4">
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-1">
-                    Subject
-                  </label>
-                  <Input 
-                    id="subject"
-                    className="bg-cosmic-dark/50 border-cosmic-purple/30 focus:border-cosmic-purple text-white"
-                    placeholder="What's this about?"
-                    required
-                  />
-                </div>
                 
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
@@ -125,14 +114,21 @@ const ContactSection = () => {
             </div>
             
             <div className="cosmic-card p-6">
-              <h4 className="text-xl font-bold mb-4 text-white">Ready to Start?</h4>
-              <p className="text-gray-300 mb-4">
-                Schedule a free consultation and let's discuss how we can bring your ideas to life.
-              </p>
-              <Button className="w-full bg-cosmic-blue hover:bg-cosmic-purple transition-colors flex items-center justify-center gap-2">
-                Schedule a Call
-                <ExternalLink className="h-4 w-4" />
-              </Button>
+              <h4 className="text-xl font-bold mb-4 text-white">Connect With Us</h4>
+              <div className="space-y-3">
+                <Button className="w-full bg-cosmic-purple hover:bg-cosmic-blue transition-colors flex items-center justify-center gap-2">
+                  <ExternalLink className="h-4 w-4" />
+                  Hire Us on Upwork
+                </Button>
+                <Button variant="outline" className="w-full border-cosmic-blue text-cosmic-blue hover:bg-cosmic-blue/10 flex items-center justify-center gap-2">
+                  <Github className="h-4 w-4" />
+                  GitHub
+                </Button>
+                <Button variant="outline" className="w-full border-cosmic-cyan text-cosmic-cyan hover:bg-cosmic-cyan/10 flex items-center justify-center gap-2">
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
+                </Button>
+              </div>
             </div>
           </div>
         </div>
