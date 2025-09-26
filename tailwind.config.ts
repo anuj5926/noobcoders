@@ -26,12 +26,12 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				cosmic: {
-					dark: '#0F0F1A',
-					darker: '#090914',
-					purple: '#8B5CF6',
-					blue: '#1EAEDB',
-					cyan: '#33C3F0',
-					pink: '#D946EF',
+					dark: 'hsl(var(--cosmic-dark))',
+					darker: 'hsl(var(--cosmic-darker))',
+					purple: 'hsl(var(--cosmic-purple))',
+					blue: 'hsl(var(--cosmic-blue))',
+					cyan: 'hsl(var(--cosmic-cyan))',
+					pink: 'hsl(var(--cosmic-pink))',
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',

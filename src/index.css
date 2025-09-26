@@ -34,6 +34,14 @@
     --ring: 258 90% 66%;
 
     --radius: 0.5rem;
+
+    /* Cosmic theme colors */
+    --cosmic-dark: 240 35% 7%;
+    --cosmic-darker: 240 38% 5%;
+    --cosmic-purple: 258 90% 66%;
+    --cosmic-blue: 199 79% 49%;
+    --cosmic-cyan: 188 86% 53%;
+    --cosmic-pink: 300 70% 60%;
   }
 }
 
@@ -43,7 +51,7 @@
   }
 
   body {
-    @apply bg-cosmic-dark text-foreground;
+    @apply bg-background text-foreground;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
   }
 }
