@@ -93,8 +93,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-medium">Email</h4>
-                    <a href="mailto:hello@noobcores.io" className="text-gray-300 hover:text-cosmic-purple transition-colors">
-                      hello@noobcores.io
+                    <a href="mailto:hello@noobcoders.io" className="text-gray-300 hover:text-cosmic-purple transition-colors">
+                      hello@noobcoders.io
                     </a>
                   </div>
                 </div>

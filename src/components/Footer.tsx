@@ -40,7 +40,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <NoobcoreLogo size="sm" />
-              <span className="text-xl font-bold text-gradient">Noobcores.io</span>
+              <span className="text-xl font-bold text-gradient">Noobcoders.io</span>
             </div>
             <p className="text-gray-400 mb-4">
               Pioneering the digital frontier with cutting-edge technology solutions for forward-thinking businesses.
@@ -113,7 +113,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 mt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-          <p>© {currentYear} Noobcores.io. All rights reserved.</p>
+          <p>© {currentYear} Noobcoders.io. All rights reserved.</p>
         </div>
       </div>
     </footer>

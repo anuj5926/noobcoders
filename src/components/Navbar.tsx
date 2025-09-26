@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <NoobcoreLogo size="sm" />
-            <span className="text-xl font-bold text-gradient">Noobcores.io</span>
+            <span className="text-xl font-bold text-gradient">Noobcoders.io</span>
           </div>
           
           {/* Desktop Navigation */}

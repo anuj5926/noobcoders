@@ -9,7 +9,7 @@ const testimonials = [
     position: 'CEO, TechFusion',
     avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&h=100&fit=crop',
     rating: 5,
-    text: "Noobcores.io transformed our outdated platform into a modern, high-performing application. Their team's expertise in React and Laravel is unmatched!"
+    text: "Noobcoders.io transformed our outdated platform into a modern, high-performing application. Their team's expertise in React and Laravel is unmatched!"
   },
   {
     id: 2,
@@ -81,7 +81,7 @@ const TestimonialsSection = () => {
         
         <div className="mt-16 cosmic-card p-8 text-center max-w-3xl mx-auto">
           <p className="text-xl text-white mb-6">
-            "Working with Noobcores.io has been a game-changer for our business. Their team delivers excellence at every step."
+            "Working with Noobcoders.io has been a game-changer for our business. Their team delivers excellence at every step."
           </p>
           <div className="flex justify-center items-center gap-2">
             {[1, 2, 3, 4, 5].map((star) => (
