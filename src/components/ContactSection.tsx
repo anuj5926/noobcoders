@@ -12,7 +12,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
+    <section id="contact" className="py-24 relative overflow-hidden bg-cosmic-darker/30">
       {/* Background effects */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-cosmic-purple/10 rounded-full blur-[100px]"></div>
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-cosmic-blue/10 rounded-full blur-[100px]"></div>
@@ -29,7 +29,7 @@ const ContactSection = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
-            <div className="cosmic-card p-8">
+            <div className="cosmic-card p-8 rounded-2xl shadow-2xl border border-cosmic-purple/20">
               <h3 className="text-2xl font-bold mb-6 text-white">Get in Touch</h3>
               
               <form onSubmit={handleSubmit}>
@@ -74,7 +74,7 @@ const ContactSection = () => {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-cosmic-purple hover:bg-cosmic-blue transition-colors duration-300"
+                  className="w-full bg-cosmic-purple hover:bg-cosmic-blue transition-all duration-300 transform hover:scale-105 rounded-full py-3 text-lg font-semibold shadow-lg"
                 >
                   Send Message
                 </Button>
@@ -113,18 +113,18 @@ const ContactSection = () => {
               </div>
             </div>
             
-            <div className="cosmic-card p-6">
+            <div className="cosmic-card p-6 rounded-2xl shadow-2xl border border-cosmic-purple/20">
               <h4 className="text-xl font-bold mb-4 text-white">Connect With Us</h4>
               <div className="space-y-3">
-                <Button className="w-full bg-cosmic-purple hover:bg-cosmic-blue transition-colors flex items-center justify-center gap-2">
+                <Button className="w-full bg-cosmic-purple hover:bg-cosmic-blue transition-all duration-300 transform hover:scale-105 rounded-full py-3 font-semibold shadow-lg flex items-center justify-center gap-2">
                   <ExternalLink className="h-4 w-4" />
                   Hire Us on Upwork
                 </Button>
-                <Button variant="outline" className="w-full border-cosmic-blue text-cosmic-blue hover:bg-cosmic-blue/10 flex items-center justify-center gap-2">
+                <Button variant="outline" className="w-full border-2 border-cosmic-blue text-cosmic-blue hover:bg-cosmic-blue/20 transition-all duration-300 transform hover:scale-105 rounded-full py-3 font-semibold flex items-center justify-center gap-2">
                   <Github className="h-4 w-4" />
                   GitHub
                 </Button>
-                <Button variant="outline" className="w-full border-cosmic-cyan text-cosmic-cyan hover:bg-cosmic-cyan/10 flex items-center justify-center gap-2">
+                <Button variant="outline" className="w-full border-2 border-cosmic-cyan text-cosmic-cyan hover:bg-cosmic-cyan/20 transition-all duration-300 transform hover:scale-105 rounded-full py-3 font-semibold flex items-center justify-center gap-2">
                   <Linkedin className="h-4 w-4" />
                   LinkedIn
                 </Button>

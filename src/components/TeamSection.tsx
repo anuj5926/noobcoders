@@ -61,7 +61,7 @@ const TeamSection = () => {
           {teamMembers.map((member) => (
             <div 
               key={member.id} 
-              className="cosmic-card p-6 text-center group transition-all duration-300 hover:translate-y-[-5px] rounded-xl shadow-lg"
+              className="cosmic-card p-6 text-center group transition-all duration-300 hover:translate-y-[-8px] hover:shadow-2xl rounded-2xl shadow-lg border border-cosmic-purple/10 hover:border-cosmic-purple/30"
             >
               <div className="relative mb-6">
                 <div className="w-24 h-24 mx-auto rounded-full overflow-hidden ring-4 ring-cosmic-purple/20 group-hover:ring-cosmic-purple/40 transition-all duration-300">

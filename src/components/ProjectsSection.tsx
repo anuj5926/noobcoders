@@ -77,7 +77,7 @@ const ProjectsSection = () => {
           {filteredProjects.map((project) => (
             <div 
               key={project.id} 
-              className="cosmic-card group relative overflow-hidden transition-all duration-300 hover:translate-y-[-5px] rounded-xl shadow-lg"
+              className="cosmic-card group relative overflow-hidden transition-all duration-300 hover:translate-y-[-8px] hover:shadow-2xl rounded-2xl shadow-lg border border-cosmic-purple/10 hover:border-cosmic-purple/30"
             >
               <div className="aspect-video overflow-hidden">
                 <img 

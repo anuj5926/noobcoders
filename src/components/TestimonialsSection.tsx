@@ -50,7 +50,7 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial) => (
             <div 
               key={testimonial.id} 
-              className="cosmic-card p-6 relative"
+              className="cosmic-card p-6 relative rounded-2xl shadow-lg border border-cosmic-purple/10 hover:shadow-2xl transition-all duration-300"
             >
               <div className="absolute top-0 right-0 h-20 w-20 bg-gradient-to-bl from-cosmic-purple/20 to-transparent rounded-bl-[100px]"></div>
               
@@ -79,7 +79,7 @@ const TestimonialsSection = () => {
           ))}
         </div>
         
-        <div className="mt-16 cosmic-card p-8 text-center max-w-3xl mx-auto">
+        <div className="mt-16 cosmic-card p-8 text-center max-w-3xl mx-auto rounded-2xl shadow-2xl border border-cosmic-purple/20">
           <p className="text-xl text-white mb-6">
             "Working with Noobcoders.io has been a game-changer for our business. Their team delivers excellence at every step."
           </p>

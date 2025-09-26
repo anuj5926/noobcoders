@@ -51,8 +51,9 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+    font-optical-sizing: auto;
   }
 }
 
@@ -66,7 +67,7 @@
   }
 
   .cosmic-card {
-    @apply bg-cosmic-darker/80 backdrop-blur-sm rounded-xl cosmic-border shadow-lg;
+    @apply bg-cosmic-darker/80 backdrop-blur-sm rounded-2xl cosmic-border shadow-lg border border-cosmic-purple/10;
   }
 
   .star-bg {

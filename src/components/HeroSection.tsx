@@ -23,14 +23,14 @@ const HeroSection = () => {
               We build <span className="text-gradient">scalable web, mobile & AI solutions</span> for startups and businesses.
             </h1>
             <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl">
-              A team of 4 developers delivering full-stack apps, automation, and real-time systems.
+              A team of 4 delivering full-stack, real-time & automation systems.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-cosmic-purple hover:bg-cosmic-blue transition-colors">
+              <Button size="lg" className="bg-cosmic-purple hover:bg-cosmic-blue transition-all duration-300 transform hover:scale-105 rounded-full px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl">
                 Hire Us on Upwork
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-cosmic-purple text-white hover:bg-cosmic-purple/10">
+              <Button size="lg" variant="outline" className="border-2 border-cosmic-purple text-white hover:bg-cosmic-purple/20 transition-all duration-300 transform hover:scale-105 rounded-full px-8 py-3 text-lg font-semibold">
                 Contact Us
               </Button>
             </div>

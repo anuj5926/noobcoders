@@ -13,25 +13,25 @@ const services = [
   {
     title: 'Web & App Development',
     icon: Layout,
-    description: 'Full-stack applications using MERN, TALL stack, and React Native for cross-platform mobile apps.',
+    description: 'Full-stack applications using MERN, TALL stack, and React Native for cross-platform solutions.',
     color: 'cosmic-purple'
   },
   {
     title: 'APIs & Real-time Systems',
     icon: Database,
-    description: 'High-performance APIs with FastAPI, WebSocket connections, and Redis for real-time data processing.',
+    description: 'High-performance APIs with FastAPI, WebSocket connections, and Redis for real-time processing.',
     color: 'cosmic-blue'
   },
   {
     title: 'AI & Automation',
     icon: Cpu,
-    description: 'Intelligent solutions using LangChain, LangGraph, and QA automation for seamless workflows.',
+    description: 'Intelligent solutions using LangChain, LangGraph, and QA automation for streamlined workflows.',
     color: 'cosmic-cyan'
   },
   {
     title: 'DevOps & Deployment',
     icon: Terminal,
-    description: 'AWS cloud infrastructure, Vercel hosting, Docker containerization, and complete CI/CD pipelines.',
+    description: 'AWS cloud infrastructure, Vercel hosting, Docker containerization, and CI/CD pipelines.',
     color: 'cosmic-pink'
   }
 ];
@@ -57,7 +57,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="cosmic-card p-6 group transition-all duration-300 hover:translate-y-[-5px] rounded-xl shadow-lg"
+              className="cosmic-card p-6 group transition-all duration-300 hover:translate-y-[-8px] hover:shadow-2xl rounded-2xl shadow-lg border border-cosmic-purple/10 hover:border-cosmic-purple/30"
             >
               <div className={`inline-flex p-3 rounded-lg bg-${service.color}/10 mb-4 group-hover:bg-${service.color}/20 transition-colors duration-300`}>
                 <service.icon 
