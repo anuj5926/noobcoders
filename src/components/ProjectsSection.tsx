@@ -79,20 +79,25 @@ const ProjectsSection = () => {
         </div>
         
         <div className="flex flex-wrap justify-center gap-3 mb-10">
-          {categories.map((category) => (
-            <Button
-              key={category}
-              variant={activeCategory === category ? "default" : "outline"}
-              className={`
-                rounded-full text-sm px-4 
-                ${activeCategory === category ? 'bg-cosmic-purple text-white' : 'border-cosmic-purple/30 text-gray-300 hover:bg-cosmic-purple/10'}
-              `}
-              onClick={() => setActiveCategory(category)}
-              data-testid={`button-category-${category.toLowerCase().replace(/\s+/g, '-')}`}
-            >
-              {category}
-            </Button>
-          ))}
+          {categories.map((category) => {
+            const isActive = activeCategory === category;
+            return (
+              <button
+                key={category}
+                type="button"
+                className={`
+                  rounded-full text-sm px-6 py-2 font-medium transition-all duration-300
+                  ${isActive 
+                    ? 'bg-cosmic-purple text-white shadow-lg shadow-cosmic-purple/30' 
+                    : 'border border-cosmic-purple/30 text-gray-300 hover:bg-cosmic-purple/10 hover:border-cosmic-purple/50'}
+                `}
+                onClick={() => setActiveCategory(category)}
+                data-testid={`button-category-${category.toLowerCase().replace(/\s+/g, '-')}`}
+              >
+                {category}
+              </button>
+            );
+          })}
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -131,12 +136,6 @@ const ProjectsSection = () => {
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="text-center mt-12">
-          <Button variant="outline" className="border-cosmic-purple text-white hover:bg-cosmic-purple/10" data-testid="button-discuss-project">
-            Discuss Your Project Idea
-          </Button>
         </div>
       </div>
     </section>

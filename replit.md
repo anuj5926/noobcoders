@@ -1,7 +1,7 @@
 # Noobcoders.io - Replit Project Documentation
 
 ## Overview
-This is a professional portfolio and service website for Noobcoders.io, a development team specializing in scalable web, mobile, and AI solutions for startups and businesses.
+This is a professional portfolio and service website for Noobcoders.io, a new startup specializing in Unity game development, modern web applications, and AI-powered solutions.
 
 ## Project Architecture
 
@@ -39,8 +39,7 @@ This is a professional portfolio and service website for Noobcoders.io, a develo
    - Changed port from 8080 to 5000 (Replit standard)
    - Changed host from `::` to `0.0.0.0` for proper binding
    - Added `strictPort: true` to ensure port 5000 is used
-   - Added HMR client port configuration
-   - Added preview mode configuration for production builds
+   - Disabled HMR to prevent connection issues in Replit environment
 
 2. **Workflow Configuration**:
    - Created "Start application" workflow
@@ -56,7 +55,7 @@ This is a professional portfolio and service website for Noobcoders.io, a develo
 ## Development
 
 ### Running the Application
-The application runs automatically via the "Start application" workflow. The dev server starts on port 5000 with hot module replacement enabled.
+The application runs automatically via the "Start application" workflow. The dev server starts on port 5000.
 
 ### Available Scripts
 - `npm run dev` - Start development server
@@ -64,22 +63,29 @@ The application runs automatically via the "Start application" workflow. The dev
 - `npm run preview` - Preview production build
 - `npm run lint` - Lint the codebase
 
-## Recent Changes (October 1, 2025)
+## Recent Changes (October 2, 2025)
 
-### Initial Replit Setup
-- Configured Vite to work with Replit's proxy environment
-- Set up proper port and host configuration
-- Installed all dependencies
-- Verified application runs without errors
-- Configured deployment settings for production
+### Website Content Update for New Startup
+- Updated all sections to reflect a NEW startup positioning
+- Removed testimonials section (replaced with Technology Stack)
+- Updated Hero section messaging for fresh startup appeal
+- Modified Services section to highlight Unity, Web, and AI capabilities
+- Changed Projects section to "What We Can Build" showcasing capabilities
+- Updated Credibility section to focus on innovation vs experience
+- Removed Team section per user request
+- Fixed filter buttons in capabilities section
+
+### Vite HMR Configuration
+- Disabled HMR to resolve connection issues in Replit proxy environment
+- Fixed blinking/reconnection issues in preview
 
 ## Features
 The website includes:
-- Hero section with company introduction
-- Services section
-- Projects portfolio
-- Team information
-- Testimonials
+- Hero section with startup introduction
+- Services section (Unity, Web, AI focus)
+- Capabilities showcase ("What We Can Build")
+- Credibility section
+- Technology Stack showcase
 - Contact form
 - Responsive navigation
 - Dark themed design
@@ -89,3 +95,4 @@ The website includes:
 - No database required
 - All dependencies are managed via npm
 - The application uses React Router for client-side routing
+- Website positioned for a NEW startup without past client testimonials
