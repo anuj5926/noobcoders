@@ -1,37 +1,37 @@
 
 import React from 'react';
 import { 
-  Database, 
+  Gamepad2,
+  Globe, 
   Code, 
-  Layout, 
-  Terminal, 
+  Brain, 
   Cpu, 
-  BarChart 
+  Sparkles 
 } from 'lucide-react';
 
 const services = [
   {
-    title: 'Web & App Development',
-    icon: Layout,
-    description: 'Full-stack applications using MERN, TALL stack, and React Native for cross-platform solutions.',
+    title: 'Unity Game Development',
+    icon: Gamepad2,
+    description: '2D & 3D games, interactive experiences, AR/VR applications, and Unity WebGL projects for browsers.',
     color: 'cosmic-purple'
   },
   {
-    title: 'APIs & Real-time Systems',
-    icon: Database,
-    description: 'High-performance APIs with FastAPI, WebSocket connections, and Redis for real-time processing.',
+    title: 'Web Applications',
+    icon: Globe,
+    description: 'Modern responsive websites, progressive web apps, and full-stack applications using React, Next.js, and more.',
     color: 'cosmic-blue'
   },
   {
-    title: 'AI & Automation',
-    icon: Cpu,
-    description: 'Intelligent solutions using LangChain, LangGraph, and QA automation for streamlined workflows.',
+    title: 'AI Solutions',
+    icon: Brain,
+    description: 'AI-powered features, chatbots, machine learning integration, and intelligent automation for your projects.',
     color: 'cosmic-cyan'
   },
   {
-    title: 'DevOps & Deployment',
-    icon: Terminal,
-    description: 'AWS cloud infrastructure, Vercel hosting, Docker containerization, and CI/CD pipelines.',
+    title: 'Custom Development',
+    icon: Code,
+    description: 'Tailored solutions combining Unity, Web, and AI technologies to meet your unique business needs.',
     color: 'cosmic-pink'
   }
 ];
@@ -39,7 +39,6 @@ const services = [
 const ServicesSection = () => {
   return (
     <section id="services" className="py-24 relative overflow-hidden">
-      {/* Background effects */}
       <div className="absolute top-1/3 right-0 w-64 h-64 bg-cosmic-purple/10 rounded-full blur-[100px]"></div>
       <div className="absolute bottom-1/4 left-0 w-72 h-72 bg-cosmic-blue/10 rounded-full blur-[100px]"></div>
       
@@ -49,7 +48,7 @@ const ServicesSection = () => {
             Our <span className="text-gradient">Services</span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            We provide end-to-end solutions tailored to your business needs, using the latest technologies and best practices.
+            We specialize in Unity game development, modern web applications, and AI-powered solutions to bring innovative ideas to life.
           </p>
         </div>
         
@@ -58,6 +57,7 @@ const ServicesSection = () => {
             <div 
               key={index} 
               className="cosmic-card p-6 group transition-all duration-300 hover:translate-y-[-8px] hover:shadow-2xl rounded-2xl shadow-lg border border-cosmic-purple/10 hover:border-cosmic-purple/30"
+              data-testid={`card-service-${index}`}
             >
               <div className={`inline-flex p-3 rounded-lg bg-${service.color}/10 mb-4 group-hover:bg-${service.color}/20 transition-colors duration-300`}>
                 <service.icon 

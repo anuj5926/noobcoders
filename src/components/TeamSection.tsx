@@ -1,40 +1,40 @@
 import React from 'react';
-import { Code, Database, Brain, Server } from 'lucide-react';
+import { Gamepad2, Globe, Brain, Lightbulb } from 'lucide-react';
 
 const teamMembers = [
   {
     id: 1,
-    name: 'Alex Johnson',
-    role: 'Full-stack Developer',
-    specialty: 'React + Node.js',
-    icon: Code,
+    name: 'Unity Developer',
+    role: 'Game Development',
+    specialty: 'Unity 2D/3D & WebGL',
+    icon: Gamepad2,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
     color: 'cosmic-purple'
   },
   {
     id: 2,
-    name: 'Sarah Chen',
-    role: 'Backend Engineer',
-    specialty: 'FastAPI + LangChain',
-    icon: Database,
+    name: 'Web Developer',
+    role: 'Full-Stack Development',
+    specialty: 'React & Next.js',
+    icon: Globe,
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face',
     color: 'cosmic-blue'
   },
   {
     id: 3,
-    name: 'Michael Torres',
-    role: 'AI Developer',
-    specialty: 'LangGraph + Automation',
+    name: 'AI Specialist',
+    role: 'AI Integration',
+    specialty: 'Machine Learning & APIs',
     icon: Brain,
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
     color: 'cosmic-cyan'
   },
   {
     id: 4,
-    name: 'Emily Rodriguez',
-    role: 'DevOps Engineer',
-    specialty: 'AWS + Docker + CI/CD',
-    icon: Server,
+    name: 'Creative Lead',
+    role: 'Design & Strategy',
+    specialty: 'UX/UI & Concept Design',
+    icon: Lightbulb,
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
     color: 'cosmic-pink'
   }
@@ -43,7 +43,6 @@ const teamMembers = [
 const TeamSection = () => {
   return (
     <section id="team" className="py-24 relative overflow-hidden">
-      {/* Background effects */}
       <div className="absolute top-1/4 right-0 w-64 h-64 bg-cosmic-cyan/10 rounded-full blur-[100px]"></div>
       <div className="absolute bottom-1/4 left-0 w-72 h-72 bg-cosmic-pink/10 rounded-full blur-[100px]"></div>
       
@@ -53,7 +52,7 @@ const TeamSection = () => {
             Meet Our <span className="text-gradient">Team</span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            4 developers with 6+ years combined experience building scalable, production-ready apps.
+            A passionate team of developers and creatives ready to bring your ideas to life with Unity, Web, and AI technologies.
           </p>
         </div>
         
@@ -62,6 +61,7 @@ const TeamSection = () => {
             <div 
               key={member.id} 
               className="cosmic-card p-6 text-center group transition-all duration-300 hover:translate-y-[-8px] hover:shadow-2xl rounded-2xl shadow-lg border border-cosmic-purple/10 hover:border-cosmic-purple/30"
+              data-testid={`card-team-${member.id}`}
             >
               <div className="relative mb-6">
                 <div className="w-24 h-24 mx-auto rounded-full overflow-hidden ring-4 ring-cosmic-purple/20 group-hover:ring-cosmic-purple/40 transition-all duration-300">

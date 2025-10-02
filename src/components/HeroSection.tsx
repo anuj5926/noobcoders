@@ -7,7 +7,6 @@ import { ArrowRight } from 'lucide-react';
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
-      {/* Background stars and effects */}
       <div className="absolute inset-0 star-bg opacity-50"></div>
       <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-cosmic-purple/20 rounded-full blur-[100px]"></div>
       <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-cosmic-blue/20 rounded-full blur-[100px]"></div>
@@ -17,20 +16,20 @@ const HeroSection = () => {
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-2">
               <div className="h-1 w-6 bg-cosmic-purple"></div>
-              <span className="text-cosmic-pink font-medium">Professional Development Team</span>
+              <span className="text-cosmic-pink font-medium">Innovation-Driven Development</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              We build <span className="text-gradient">scalable web, mobile & AI solutions</span> for startups and businesses.
+              We create <span className="text-gradient">Unity, Web & AI solutions</span> that bring your vision to life.
             </h1>
             <p className="text-gray-300 text-lg md:text-xl mb-8 max-w-2xl">
-              A team of 4 delivering full-stack, real-time & automation systems.
+              A fresh startup team specializing in Unity game development, modern web applications, and AI-powered solutions.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-cosmic-purple hover:bg-cosmic-blue transition-all duration-300 transform hover:scale-105 rounded-full px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl">
-                Hire Us on Upwork
+              <Button size="lg" className="bg-cosmic-purple hover:bg-cosmic-blue transition-all duration-300 transform hover:scale-105 rounded-full px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl" data-testid="button-hire">
+                Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" className="border-2 border-cosmic-purple text-white hover:bg-cosmic-purple/20 transition-all duration-300 transform hover:scale-105 rounded-full px-8 py-3 text-lg font-semibold">
+              <Button size="lg" variant="outline" className="border-2 border-cosmic-purple text-white hover:bg-cosmic-purple/20 transition-all duration-300 transform hover:scale-105 rounded-full px-8 py-3 text-lg font-semibold" data-testid="button-contact">
                 Contact Us
               </Button>
             </div>
@@ -41,7 +40,7 @@ const HeroSection = () => {
                 <div className="w-8 h-8 rounded-full bg-cosmic-pink/30 border border-cosmic-pink/50"></div>
               </div>
               <p className="text-gray-400 text-sm">
-                <span className="font-semibold text-white">50+</span> Projects Delivered
+                <span className="font-semibold text-white">Ready to Build</span> Your Next Big Idea
               </p>
             </div>
           </div>
